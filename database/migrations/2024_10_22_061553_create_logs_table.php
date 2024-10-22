@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('logs', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('status');
             $table->enum('status', ['login', 'logout']); // Set status as enum
             $table->timestamps();
         });
